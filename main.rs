@@ -5,6 +5,43 @@ use reqwest::Client;
 use reqwest::header::AUTHORIZATION;
 use serde_json::Value;
 
+fn split_at_positions(string: &str, num_chunks: usize) -> Vec<String> {
+    let split_list: Vec<&str> = string.split('\n').collect();
+    let mut chunk_size = split_list.len() / num_chunks;
+    let mut tach_cau_dau_hieu = '\n';
+
+    if chunk_size == 0 {
+        if string.contains('.') {
+            let split_list: Vec<&str> = string.split('.').collect();
+            chunk_size = split_list.len() / num_chunks;
+            tach_cau_dau_hieu = '.';
+        } else if string.contains('?') {
+            let split_list: Vec<&str> = string.split('?').collect();
+            chunk_size = split_list.len() / num_chunks;
+            tach_cau_dau_hieu = '?';
+        } else {
+            return split_list.into_iter().map(|s| s.to_string()).collect();
+        }
+    }
+
+    let mut chunks = Vec::new();
+    let mut start = 0;
+    while start < split_list.len() {
+        let end = (start + chunk_size).min(split_list.len());
+        let chunk = split_list[start..end].join(&tach_cau_dau_hieu.to_string());
+        chunks.push(chunk);
+        start = end;
+    }
+
+    if split_list.len() % num_chunks != 0 {
+        let last_chunk = chunks.pop().unwrap();
+        let second_last_chunk = chunks.pop().unwrap();
+        chunks.push(format!("{}{}{}", second_last_chunk, tach_cau_dau_hieu, last_chunk));
+    }
+
+    chunks
+}
+
 #[tokio::main]
 async fn main() {
     // Read the username, password, and activate_beta from the config.cfg file
@@ -44,42 +81,49 @@ async fn main() {
         let content = fs::read_to_string(&file_path).unwrap();
         println!("{}", content);
 
-        // Create a client and set the authentication header
-        let client = Client::new();
-        let auth_header = format!("Basic {}", base64::encode(&format!("{}:{}", username, password)));
-
-        // Send the content to the FastAPI endpoint
-        let response = client
-            .get(base_url)
-            .query(&[("message", content), ("activate_beta", activate_beta.to_string())])
-            .header(AUTHORIZATION, auth_header)
-            .send()
-            .await
-            .unwrap();
-
-        // Check if the request was successful
-        if response.status().is_success() {
-            // Extract the response body as a string
-            let response_text = response.text().await.unwrap();
-            // Parse the JSON response
-            let json: Value = serde_json::from_str(&response_text).unwrap();
-            // Extract the "message" field from the JSON
-            let result = json["message"].as_str().unwrap_or_default();
-            // Write the result to a file in the "output" folder
-            let output_file_path = output_folder.join(file_path.file_name().unwrap());
-            let output_file_path_clone = output_file_path.clone();
-            let mut output_file = fs::File::create(output_file_path).unwrap();
-            output_file.write_all(result.as_bytes()).unwrap();
-            println!(
-                "Processed {:?} and saved the result to {:?}",
-                file_path, output_file_path_clone
-            );
+        // Check if the content needs to be split
+        let list_send_to_api = if content.chars().count() > 1980 {
+            let chunk_size = std::cmp::max(1, content.chars().count() / 1000);
+            split_at_positions(&content, chunk_size)
         } else {
-            println!(
-                "Error processing {:?}. Status code: {}",
-                file_path,
-                response.status()
-            );
+            vec![content]
+        };
+
+        // Create the output file for the current text file
+        let output_file_path = output_folder.join(file_path.file_name().unwrap());
+        let mut output_file = fs::File::create(&output_file_path).unwrap();
+
+        // Process each chunk and append the response to the output file
+        for chunk in list_send_to_api {
+            // Create a client and set the authentication header
+            let client = Client::new();
+            let auth_header = format!("Basic {}", base64::encode(&format!("{}:{}", username, password)));
+
+            // Send the chunk to the FastAPI endpoint
+            let response = client
+                .get(base_url)
+                .query(&[("message", chunk), ("activate_beta", activate_beta.to_string())])
+                .header(AUTHORIZATION, auth_header)
+                .send()
+                .await
+                .unwrap();
+
+            // Check if the request was successful
+            if response.status().is_success() {
+                // Extract the response body as a string
+                let response_text = response.text().await.unwrap();
+                // Parse the JSON response
+                let json: Value = serde_json::from_str(&response_text).unwrap();
+                // Extract the "message" field from the JSON
+                let result = json["message"].as_str().unwrap_or_default();
+                // Append the result to the output file
+                writeln!(output_file, "{}", result).unwrap();
+                println!("Processed chunk and saved the result to {:?}", output_file_path);
+            } else {
+                println!("Error processing chunk. Status code: {}", response.status());
+            }
         }
+
+        println!("Processed {:?} and saved the result to {:?}", file_path, output_file_path);
     }
 }
