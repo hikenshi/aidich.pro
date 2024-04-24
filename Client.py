@@ -4,10 +4,13 @@ from requests.auth import HTTPBasicAuth
 
 # Set the base URL of your FastAPI endpoint
 base_url = "https://aidich.pro/protected"  # Replace with your FastAPI endpoint URL
-# Load username and password for authentication
+
+# Load username, password, and activate_beta from config.cfg
 with open("config.cfg", "r") as file:
-    user_info = file.read()
-    username, password = user_info.strip().split(",")
+    config = file.read().strip().split(",")
+    username = config[0]
+    password = config[1]
+    activate_beta = config[2].lower() == "true"
 
 # Create the "output" folder if it doesn't exist
 output_folder = "output"
@@ -23,10 +26,11 @@ for file_name in text_files:
     with open(file_name, "r", encoding='utf-8') as file:
         content = file.read()
     print(content)
+
     # Send the content to the FastAPI endpoint
     response = requests.get(
         f"{base_url}",
-        params={"message": content},
+        params={"message": content, "activate_beta": activate_beta},
         auth=HTTPBasicAuth(username, password)
     )
 
@@ -34,7 +38,6 @@ for file_name in text_files:
     if response.status_code == 200:
         # Extract the response message
         result = response.json()["message"]
-
         # Write the result to a file in the "output" folder
         output_file_name = os.path.join(output_folder, file_name)
         with open(output_file_name, "w", encoding='utf-8') as output_file:

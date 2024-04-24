@@ -7,12 +7,13 @@ use serde_json::Value;
 
 #[tokio::main]
 async fn main() {
-    // Read the username and password from the config.cfg file
+    // Read the username, password, and activate_beta from the config.cfg file
     let config_path = Path::new("config.cfg");
     let config_contents = fs::read_to_string(config_path).unwrap_or_else(|_| panic!("Failed to read config file: {:?}", config_path));
     let mut config_parts = config_contents.trim().split(',');
     let username = config_parts.next().unwrap_or_default();
     let password = config_parts.next().unwrap_or_default();
+    let activate_beta = config_parts.next().map(|s| s.to_lowercase() == "true").unwrap_or(false);
 
     // Set the base URL of your FastAPI endpoint
     let base_url = "https://aidich.pro/protected";
@@ -50,7 +51,7 @@ async fn main() {
         // Send the content to the FastAPI endpoint
         let response = client
             .get(base_url)
-            .query(&[("message", content)])
+            .query(&[("message", content), ("activate_beta", activate_beta.to_string())])
             .header(AUTHORIZATION, auth_header)
             .send()
             .await
@@ -60,13 +61,10 @@ async fn main() {
         if response.status().is_success() {
             // Extract the response body as a string
             let response_text = response.text().await.unwrap();
-
             // Parse the JSON response
             let json: Value = serde_json::from_str(&response_text).unwrap();
-
             // Extract the "message" field from the JSON
             let result = json["message"].as_str().unwrap_or_default();
-
             // Write the result to a file in the "output" folder
             let output_file_path = output_folder.join(file_path.file_name().unwrap());
             let output_file_path_clone = output_file_path.clone();
