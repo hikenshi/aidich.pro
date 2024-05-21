@@ -21,7 +21,7 @@ Client để chạy dịch nhiều file txt.
           * Nếu tên riêng do AI ban đầu dịch sai tên, cũng có thể hướng dẫn Gemini sửa cho đúng.
             
                Ví dụ:
-              Tên riêng Tạ Vân lam bị sai, hãy sửa lại là Tạ Vân Tranh.
+                Tên riêng Tạ Vân lam bị sai, hãy sửa lại là Tạ Vân Tranh.
             
     + Xóa file config.csv để khởi tạo lại yêu cầu điền username, password và các chế độ dịch, biên tập.
 
