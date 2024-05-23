@@ -31,5 +31,6 @@ Client để chạy dịch nhiều file txt.
     + Nếu sử dụng Gemini để biên tập thì nên tách các file số lượng chữ nhiều ra làm nhiều file nhỏ, ví dụ mỗi chương 1 file, vì thời gian Gemini biên tập có thể rất lâu.
     + Phí sẽ được tính như sau:
       
-          * Gemini 1.0 : 5 points / chữ. Chi tiết: (Tổng số chữ đã được AIDICH dịch ra + số chữ trong file prompt.csv + prompt hệ thống [200 chữ]) x 5
-          * Gemini 1.5 : 12 points / chữ. Chi tiết: (Tổng số chữ đã được AIDICH dịch ra + số chữ trong file prompt.csv + prompt hệ thống [200 chữ]) x 12
+          * Gemini 1.0 : 3 points / chữ. Chi tiết: (Tổng số chữ đã được AIDICH dịch ra + số chữ trong file prompt.csv + prompt hệ thống [200 chữ]) x 3
+          * Gemini 1.5 : 6 points / chữ. Chi tiết: (Tổng số chữ đã được AIDICH dịch ra + số chữ trong file prompt.csv + prompt hệ thống [200 chữ]) x 6
+          * Gemini 1.5 Ultra : 24 points / chữ. Chi tiết: (Tổng số chữ đã được AIDICH dịch ra + số chữ trong file prompt.csv + prompt hệ thống [200 chữ]) x 24
