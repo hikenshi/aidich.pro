@@ -33,4 +33,4 @@ Client để chạy dịch nhiều file txt.
       
           * AI 1 : 3 points / chữ. Chi tiết: (Tổng số chữ đã được AIDICH dịch ra + số chữ trong file prompt.csv + prompt hệ thống [220 - 240 chữ]) x 3
           * AI 2 : 6 points / chữ. Chi tiết: (Tổng số chữ đã được AIDICH dịch ra + số chữ trong file prompt.csv + prompt hệ thống [220 - 240 chữ]) x 6
-          * AI 2 Ultra : 24 points / chữ. Chi tiết: (Tổng số chữ đã được AIDICH dịch ra + số chữ trong file prompt.csv + prompt hệ thống [200 chữ]) x 24
+          * AI 2 Ultra : 24 points / chữ. Chi tiết: (Tổng số chữ đã được AIDICH dịch ra + số chữ trong file prompt.csv + prompt hệ thống [220 - 240 chữ]) x 24
