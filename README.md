@@ -31,6 +31,6 @@ Client để chạy dịch nhiều file txt.
     + Nếu sử dụng AI để biên tập thì nên tách các file số lượng chữ nhiều ra làm nhiều file nhỏ, ví dụ mỗi chương 1 file, vì thời gian AI biên tập có thể rất lâu.
     + Phí sẽ được tính như sau:
       
-          * AI 1 : 3 points / chữ. Chi tiết: (Tổng số chữ đã được AIDICH dịch ra + số chữ trong file prompt.csv + prompt hệ thống [200 chữ]) x 3
-          * AI 2 : 6 points / chữ. Chi tiết: (Tổng số chữ đã được AIDICH dịch ra + số chữ trong file prompt.csv + prompt hệ thống [200 chữ]) x 6
+          * AI 1 : 3 points / chữ. Chi tiết: (Tổng số chữ đã được AIDICH dịch ra + số chữ trong file prompt.csv + prompt hệ thống [220 - 240 chữ]) x 3
+          * AI 2 : 6 points / chữ. Chi tiết: (Tổng số chữ đã được AIDICH dịch ra + số chữ trong file prompt.csv + prompt hệ thống [220 - 240 chữ]) x 6
           * AI 2 Ultra : 24 points / chữ. Chi tiết: (Tổng số chữ đã được AIDICH dịch ra + số chữ trong file prompt.csv + prompt hệ thống [200 chữ]) x 24
