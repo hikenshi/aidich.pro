@@ -1,0 +1,7 @@
+*** Thông báo ***
++ Đã có phiên bản AI biên tập AI 2 Ultra giảm 40% (thực tế đang giàm ~50% với 13 points/ chữ ). Chỉ sử dụng trên app tải về tại https://github.com/hikenshi/aidich.pro/blob/main/AI2UltraGiam40.zip
++ Giảm cho các AI biên tập sau:
+  - AI 1: giảm 30% còn 2 points / chữ.
+  - AI 1 Ultra: Giảm 20% còn 14 points / chữ.
+  - AI 2: Giảm 50% còn 3 points / chữ.
+  - AI 2 Ultra: Giảm 10% còn 22 points / chữ. (Nên dùng bản giảm 40%)
