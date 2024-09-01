@@ -7,3 +7,5 @@
   - AI 1 Ultra: Giảm 20% còn 14 points / chữ.
   - AI 2: Giảm 50% còn 3 points / chữ.
   - AI 2 Ultra: Giảm 10% còn 22 points / chữ. (Nên dùng bản giảm 40%)
++ Đã có tool phân tích tên riêng
++ Thay đổi AI 8 Ultra trở thành AI 2 Ultra giảm 50% 13 points / chữ, tốc độ cao như AI 2 Ultra.
