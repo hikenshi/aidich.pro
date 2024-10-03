@@ -1,11 +1,12 @@
 *** Thông báo ***
 
-+ Đã có phiên bản AI biên tập AI 2 Ultra giảm 40% (thực tế đang giàm ~50% với 13 points/ chữ ). Chỉ sử dụng trên app tải về tại https://github.com/hikenshi/aidich.pro/blob/main/AI2UltraGiam40.zip
-
-+ Giảm cho các AI biên tập sau:
-  - AI 1: giảm 30% còn 2 points / chữ.
-  - AI 1 Ultra: Giảm 20% còn 14 points / chữ.
-  - AI 2: Giảm 50% còn 3 points / chữ.
-  - AI 2 Ultra: Giảm 10% còn 22 points / chữ. (Nên dùng bản giảm 40%)
++ Đã có phiên bản AI biên tập AI 2 Ultra giảm 40% (thực tế đang giàm ~50% với 8 points/ chữ ). Chỉ sử dụng trên app tải về tại https://github.com/hikenshi/aidich.pro/blob/main/AI2UltraGiam40.zip
 + Đã có tool phân tích tên riêng
-+ Thay đổi AI 8 Ultra trở thành AI 2 Ultra giảm 50% 13 points / chữ, tốc độ cao như AI 2 Ultra.
++ Thay đổi AI 8 Ultra trở thành AI 2 Ultra giảm 50% 8 points / chữ, tốc độ cao như AI 2 Ultra.
+Cập nhật giảm giá các AI biên tập từ 02/10:
++ AI 1 còn 1 point/ chữ.
++ AI 1 Ultra còn 8 point/ chữ.
++ AI 2 còn 3 point/chữ.
++ AI 2 Ultra còn 13 point/ chữ.
++ AI 2 Ultra giảm 40% còn 8 point/ chữ.
++ AI 8 Ultra còn 8 point/ chữ.
