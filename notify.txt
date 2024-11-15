@@ -10,4 +10,4 @@ Cập nhật giảm giá các AI biên tập từ 02/10:
 + AI 2 Ultra còn 13 point/ chữ.
 + AI 2 Ultra giảm 40% còn 8 point/ chữ.
 + AI 8 Ultra còn 8 point/ chữ.
-*** Thêm dòng này "KEEP_NAME==1" (nhớ bỏ " khi thêm) Vào dòng đầu tiên của prompt.csv, Thì các từ vựng trong bangten.dict sẽ không bị thay đổi nữa (do có một số trường hợp AI biên tập nó vẫn sẽ thay đổi ). Chỉ dành cho AI 2 Ultra, AI 2 Ultra giảm 30%, AI 8 Ultra và AI 2 Ultra giảm 40%.
+*** Thêm dòng này "KEEP_NAME==1" (nhớ bỏ " khi thêm) Vào dòng đầu tiên của prompt.csv, Thì các từ vựng trong bangten.dict sẽ không bị thay đổi nữa (do có một số trường hợp AI biên tập nó vẫn sẽ thay đổi ). Chỉ dành cho AI 2 Ultra, AI 2 Ultra giảm 30%, AI 8 Ultra và AI 2 Ultra giảm 40% chạy trên App PC.
