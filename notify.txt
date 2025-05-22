@@ -4,7 +4,6 @@
 + Thay Đổi AI 2 thành AI 9 Ultra giá 10 points / chữ.
 + Giá AI 8 Ultra được thay đổi thành 15 points / chữ.
 + Giá AI 4 Ultra được thay đổi thành 18 points / chữ.
-+ Đổi AI Biên tập chạy riêng có file JOB sang AI 7 Ultra giá 6 points / chữ.
 
 Dưới đây là danh sách các AI Biên tập:
 1. [HIỆN ĐẠI] AI 7 Ultra [9 points/chữ]
