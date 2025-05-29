@@ -2,8 +2,8 @@
 + Có Client mới cập nhật giá mới và tên các AI biên tập mới. Không cần thiết phải tải client mới.
 + Thay đổi AI 1 thành AI 7 Ultra giá 9 points / chữ.
 + Thay Đổi AI 2 thành AI 9 Ultra giá 10 points / chữ.
-+ Giá AI 8 Ultra được thay đổi thành 15 points / chữ.
-+ Giá AI 4 Ultra được thay đổi thành 18 points / chữ.
++ Giá AI 8 Ultra được thay đổi thành 16 points / chữ.
++ Giá AI 4 Ultra được thay đổi thành 20 points / chữ.
 
 Dưới đây là danh sách các AI Biên tập:
 1. [HIỆN ĐẠI] AI 7 Ultra [9 points/chữ]
