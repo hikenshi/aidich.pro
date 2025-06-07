@@ -2,8 +2,8 @@
 + Có Client mới cập nhật giá mới và tên các AI biên tập mới. Không cần thiết phải tải client mới.
 + Thay đổi AI 1 thành AI 7 Ultra giá 9 points / chữ.
 + Thay Đổi AI 2 thành AI 9 Ultra giá 10 points / chữ.
-+ Giá AI 8 Ultra được thay đổi thành 16 points / chữ.
-+ Giá AI 4 Ultra được thay đổi thành 20 points / chữ.
++ Giá AI 8 Ultra được thay đổi thành 32 points / chữ.
++ Giá AI 4 Ultra được thay đổi thành 40 points / chữ.
 
 Dưới đây là danh sách các AI Biên tập:
 1. [HIỆN ĐẠI] AI 7 Ultra [9 points/chữ]
@@ -11,18 +11,18 @@ Dưới đây là danh sách các AI Biên tập:
 3. [HIỆN ĐẠI] AI 9 Ultra [10 points/chữ]
 4. [HIỆN ĐẠI] AI 2 Ultra [15 points/chữ]
 5. [HIỆN ĐẠI] AI 6 Ultra [9 points/chữ]
-6. [HIỆN ĐẠI] AI 4 Ultra Giảm 30% [12 points/chữ] [chưa hoạt động]
+6. [HIỆN ĐẠI] AI 4 Ultra Giảm 30% [20 points/chữ] [chưa hoạt động]
 7. [HIỆN ĐẠI] AI 3 Ultra [32 points/chữ]
-8. [HIỆN ĐẠI] AI 4 Ultra [20 points/chữ]
+8. [HIỆN ĐẠI] AI 4 Ultra [40 points/chữ]
 9. [HIỆN ĐẠI] AI 5 Ultra [3 points/chữ] [chưa hoạt động]
-10. [HIỆN ĐẠI] AI 8 Ultra [16 points/chữ]
+10. [HIỆN ĐẠI] AI 8 Ultra [32 points/chữ]
 11. [CỔ ĐẠI] AI 7 Ultra [9 points/chữ]
 12. [CỔ ĐẠI] AI 1 Ultra [15 points/chữ]
 13. [CỔ ĐẠI] AI 9 Ultra [10 points/chữ]
 14. [CỔ ĐẠI] AI 2 Ultra [15 points/chữ]
 15. [CỔ ĐẠI] AI 6 Ultra [9 points/chữ]
-16. [CỔ ĐẠI] AI 4 Ultra Giảm 30% [12 points/chữ] [chưa hoạt động]
+16. [CỔ ĐẠI] AI 4 Ultra Giảm 30% [20 points/chữ] [chưa hoạt động]
 17. [CỔ ĐẠI] AI 3 Ultra [32 points/chữ]
-18. [CỔ ĐẠI] AI 4 Ultra [20 points/chữ]
+18. [CỔ ĐẠI] AI 4 Ultra [40 points/chữ]
 19. [CỔ ĐẠI] AI 5 Ultra [3 points/chữ] [chưa hoạt động]
-20. [CỔ ĐẠI] AI 8 Ultra [16 points/chữ]
+20. [CỔ ĐẠI] AI 8 Ultra [32 points/chữ]
