@@ -1,31 +1,3 @@
 *** Thông báo ***
-+ Có Client mới v0.5.8 cập nhật giá mới và tên các AI biên tập mới. Bắt buộc phải tải client mới.
-+ Thay đổi AI 3 Ultra thành AI 4 Ultra Special 15 points / chữ.
++ Có Client mới v0.5.8.2 mới fix một số bug nhỏ, hỗ trợ biên tập truyện niên đại đô thị xưng hô nhất quán.
 
-Dưới đây là danh sách các AI Biên tập:
-1. [HIỆN ĐẠI] AI 4 Ultra Mini [21 points/chữ]
-2. [HIỆN ĐẠI] AI 1 Ultra [21 points/chữ]
-3. [HIỆN ĐẠI] AI 9 Ultra [7 points/chữ]
-4. [HIỆN ĐẠI] AI 2 Ultra Special [18 points/chữ]
-5. [HIỆN ĐẠI] AI 6 Ultra [9 points/chữ]
-6. [HIỆN ĐẠI] AI Ultra 8 Mini [21 points/chữ] 
-7. [HIỆN ĐẠI] AI 4 Ultra Special [21 points/chữ]
-8. [HIỆN ĐẠI] AI 4 Ultra [40 points/chữ]
-9. [HIỆN ĐẠI] AI 5 Ultra [9 points/chữ]
-10. [HIỆN ĐẠI] AI 8 Ultra [32 points/chữ]
-11. [CỔ ĐẠI] AI 4 Ultra Mini [21 points/chữ]
-12. [CỔ ĐẠI] AI 1 Ultra [21 points/chữ]
-13. [CỔ ĐẠI] AI 9 Ultra [9 points/chữ]
-14. [CỔ ĐẠI] AI 2 Ultra Special [21 points/chữ]
-15. [CỔ ĐẠI] AI 6 Ultra [9 points/chữ]
-16. [CỔ ĐẠI] AI Ultra 8 Mini [21 points/chữ]
-17. [CỔ ĐẠI] AI 4 Ultra Special [21 points/chữ]
-18. [CỔ ĐẠI] AI 4 Ultra [40 points/chữ]
-19. [CỔ ĐẠI] AI 5 Ultra [9 points/chữ]
-20. [CỔ ĐẠI] AI 8 Ultra [32 points/chữ]
-21. [HIỆN ĐẠI] AI 4 Ultra Mini Giảm 30% [21 points/chữ]
-22. [CỔ ĐẠI] AI 4 Ultra Mini Giảm 30% [21 points/chữ]
-23. [HIỆN ĐẠI] AI 8 Ultra Mini Giảm 30% [21 points/chữ]
-24. [CỔ ĐẠI] AI 8 Ultra Mini Giảm 30% [21 points/chữ]
-25. [HIỆN ĐẠI] AI 8 Ultra Giảm 30% [32 points/chữ]
-26. [CỔ ĐẠI] AI 8 Ultra Giảm 30% [32 points/chữ]
