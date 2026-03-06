@@ -1,4 +1,5 @@
 *** Thông báo ***
++ AI 2 Ultra Special (2-12) đổi Model mới giá 10.
 + AI 4 Ultra (8-18) đổi Model mới giá 5 thay cho 40. 
 + Có Client mới v0.5.8.2 mới fix một số bug nhỏ, hỗ trợ biên tập truyện niên đại đô thị xưng hô nhất quán.
 
